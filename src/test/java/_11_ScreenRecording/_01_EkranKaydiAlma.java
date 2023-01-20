@@ -31,7 +31,7 @@ public class _01_EkranKaydiAlma extends BaseStaticDriver {
         if (spanMessage.size() > 0) {
 
             LocalDateTime date = LocalDateTime.now();
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yy");
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yy-hh.mm.ss a");
 
                             //Ekran görünütüsü alalım
             TakesScreenshot ts = (TakesScreenshot) driver;              // 1.Aşama ekran görünütüsü alma değişkenini tanımladım
