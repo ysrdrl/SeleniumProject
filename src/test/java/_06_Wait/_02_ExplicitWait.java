@@ -12,7 +12,7 @@ public class _02_ExplicitWait extends BaseStaticDriver {
         driver.get("http://seleniumpractise.blogspot.com/2016/08/how-to-use-explicit-wait-in-selenium.html");
 
         WebElement clickMe = driver.findElement(By.cssSelector("[onclick='timedText()']"));
-        getWait().until(ExpectedConditions.invisibilityOf(clickMe));
+        getWait().until(ExpectedConditions.elementToBeClickable(clickMe));
         clickMe.click();
 
         BekleKapat();

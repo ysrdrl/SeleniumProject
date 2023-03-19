@@ -10,7 +10,7 @@ public class _01_RobotIntoSendKeys extends BaseStaticDriver {
         driver.get("http://demo.guru99.com/test/upload/");
 
         WebElement chooseFile = driver.findElement(By.xpath("//input[@type='file']"));
-        chooseFile.sendKeys("C:\\Users\\yasar\\OneDrive\\Masaüstü\\Selenium\\UploadFileTest.xlsx");
+        chooseFile.sendKeys("C:\\Users\\yasar\\UploadFileTest.xlsx");
 
 
         BekleKapat();

@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -33,7 +34,12 @@ public class BaseStaticDriver {
         System.setProperty(org.slf4j.impl.SimpleLogger.DEFAULT_LOG_LEVEL_KEY, "Error");
 
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
+//        options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1400,2400");
+
+        driver = new ChromeDriver(options);
         driver.manage().window().maximize(); // max
         driver.manage().deleteAllCookies();  //
 
@@ -58,7 +64,7 @@ public class BaseStaticDriver {
     {
 
         try {
-            Thread.sleep(saniye*1000);
+            Thread.sleep(saniye*500);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

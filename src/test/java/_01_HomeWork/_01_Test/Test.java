@@ -80,7 +80,7 @@ public class Test extends BaseStaticDriver {
         finish.click();
 
         WebElement dogrulama= driver.findElement(By.className("complete-header"));
-        Assert.assertEquals(dogrulama.getText(),"THANK YOU FOR YOUR ORDER");
+        Assert.assertEquals(dogrulama.getText(),"Thank you for your order!");
 
         BekleKapat();
     }

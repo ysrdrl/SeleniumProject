@@ -30,23 +30,16 @@ public class _02_RobotInto extends BaseStaticDriver {
         }
         Bekle(1);
 
-        for (int i = 0; i < 8; i++) {
+        for (int i = 0; i < 9; i++) {
             robot.keyPress(KeyEvent.VK_TAB);
             robot.keyRelease(KeyEvent.VK_TAB);
             Bekle(1);
-            if (i == 7) {
-                robot.keyPress(KeyEvent.VK_D);
-                robot.keyRelease(KeyEvent.VK_D);
-                robot.keyPress(KeyEvent.VK_ENTER);
-                robot.keyRelease(KeyEvent.VK_ENTER);
-                robot.keyPress(KeyEvent.VK_TAB);
-                robot.keyRelease(KeyEvent.VK_TAB);
-                robot.keyPress(KeyEvent.VK_S);
-                robot.keyRelease(KeyEvent.VK_S);
-                robot.keyPress(KeyEvent.VK_ENTER);
-                robot.keyRelease(KeyEvent.VK_ENTER);
+            if (i == 8) {
                 robot.keyPress(KeyEvent.VK_U);
                 robot.keyRelease(KeyEvent.VK_U);
+                robot.keyPress(KeyEvent.VK_ENTER);
+                robot.keyRelease(KeyEvent.VK_ENTER);
+
             }
         }
 

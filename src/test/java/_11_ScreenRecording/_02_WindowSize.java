@@ -8,7 +8,7 @@ public class _02_WindowSize extends BaseStaticDriver {
     public static void main(String[] args) {
         driver.get("https://www.youtube.com/");
 
-        driver.manage().window().maximize();// Ekranı tam hale getiriyor.
+        driver.manage().window().maximize();// Ekranı tam hale getiriyor..
         Bekle(4);
 
         // Ekranı yeni ölçülere göre set etme
@@ -16,5 +16,6 @@ public class _02_WindowSize extends BaseStaticDriver {
         driver.manage().window().setSize(dim);
 
         BekleKapat();
+
     }
 }

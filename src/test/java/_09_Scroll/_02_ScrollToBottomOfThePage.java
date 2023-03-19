@@ -13,7 +13,7 @@ public class _02_ScrollToBottomOfThePage extends BaseStaticDriver {
         js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
         //sayfanın sonuna kadar kaydırır.
 
-
+        BekleKapat();
 
     }
 }
